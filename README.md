@@ -1,5 +1,4 @@
-## Flujo
-
+```mermaid
 graph TD
     A(Preguntamos al usuario) -->B(Cantidad aceptada)
     B -->|Si| C(Seleccionamos billetes)
@@ -33,15 +32,5 @@ graph TD
     V -->|Si| W(Sumamos cantidad de billetes necesaria hasta que valor<5)
     V -->|No| X{Valor=0}
     X --> Z(Resultado)
+    ```
     
-    
-    ## Clases
-    
-    classDiagram
-  direction RL
-  class Main {
-    -cantidad_usuario : int
-    -valor_billete : int
-    -cantidad_billetes: int
-    -mensaje: String []
-  }
